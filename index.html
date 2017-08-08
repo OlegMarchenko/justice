@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="mmenu/jquery.mmenu.all.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="less/main.css">
+</head>
+<body>
+
+<div id="my-page">
+    <div class="wrapper">
+        <div id="my-header">
+            <header class="header">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="holder-navbar">
+                            <div class="navbar-logo">
+                                <a href="#my-menu" class="hamburger hamburger--slider">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </a>
+                                <nav id="my-menu">
+                                    <ul>
+                                        <li class="active"><a href="#">New</a></li>
+                                        <li><a href="#">Man</a></li>
+                                        <li><a href="#">Women</a></li>
+                                        <li><a href="#">Sale</a></li>
+                                        <li><a href="#">Top</a></li>
+                                    </ul>
+                                </nav>
+                                <a href="#"><img class="logo" src="images/logo/justice.png" alt="logo"></a>
+                            </div>
+                            <div class="navbar-collapse">
+                                <ul class="navbar-nav">
+                                    <li class="active"><a href="#">New</a></li>
+                                    <li><a href="#">Men</a></li>
+                                    <li><a href="#">Women</a></li>
+                                    <li><a href="#">Sale</a></li>
+                                </ul>
+                                <ul class="navbar-optional">
+                                    <li><a href="#">
+                                        <svg class="icon icon-user">
+                                            <symbol id="icon-user" viewBox="0 0 32 32">
+                                                <title>user</title>
+                                                <path d="M29.725 23c-0.95-0.95-2.525-1.775-5.025-3.025-1.25-0.625-3.35-1.675-3.85-2.15 2.125-2.6 3.35-5.55 3.35-8.125 0-1.75 0-3.925-0.975-5.875-0.875-1.75-2.85-3.825-7.25-3.825-4.375 0-6.35 2.075-7.25 3.825-0.975 1.95-0.975 4.125-0.975 5.875 0 2.575 1.225 5.525 3.35 8.125-0.5 0.475-2.6 1.525-3.85 2.15-2.5 1.25-4.075 2.075-5.025 3.025-2.1 2.1-2.25 5.6-2.25 6.3 0 0.725 0.275 1.4 0.775 1.9s1.175 0.8 1.9 0.8h26.675c0.725 0 1.4-0.275 1.9-0.8 0.5-0.5 0.775-1.2 0.775-1.925 0-0.675-0.175-4.175-2.275-6.275zM29.8 29.8c-0.125 0.125-0.3 0.2-0.475 0.2h-26.675c-0.175 0-0.35-0.075-0.475-0.2s-0.2-0.3-0.2-0.475c0-0.325 0.1-3.325 1.675-4.9 0.725-0.725 2.25-1.525 4.5-2.65 2.4-1.2 3.725-1.9 4.325-2.475l1.35-1.275-1.175-1.45c-1.85-2.275-2.9-4.775-2.9-6.875 0-1.625 0-3.45 0.775-4.975 0.925-1.825 2.75-2.725 5.45-2.725s4.55 0.925 5.45 2.725c0.775 1.525 0.775 3.35 0.775 4.975 0 2.1-1.050 4.6-2.9 6.875l-1.175 1.45 1.35 1.275c0.6 0.575 1.95 1.3 4.325 2.475 2.25 1.125 3.775 1.9 4.5 2.65 1.275 1.275 1.65 3.7 1.675 4.9 0.025 0.175-0.050 0.35-0.175 0.475z"></path>
+                                            </symbol>
+                                            <use xlink:href="#icon-user"></use>
+                                        </svg>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <svg class="icon icon-search">
+                                            <symbol id="icon-search" viewBox="0 0 25 32">
+                                                <title>search</title>
+                                                <path d="M17.030 19.778c1.58-1.713 2.566-4.004 2.566-6.525 0-5.293-4.307-9.616-9.616-9.616s-9.612 4.323-9.612 9.616 4.307 9.616 9.616 9.616c2.162 0 4.149-0.711 5.758-1.915l7.152 7.152c0.174 0.174 0.392 0.263 0.61 0.263s0.448-0.089 0.61-0.263c0.335-0.335 0.335-0.885 0-1.232l-7.083-7.095zM2.109 13.253c0-4.335 3.523-7.875 7.875-7.875 4.335 0 7.875 3.523 7.875 7.875s-3.523 7.875-7.875 7.875-7.875-3.539-7.875-7.875z"></path>
+                                            </symbol>
+                                            <use xlink:href="#icon-search"></use>
+                                        </svg>
+                                    </a></li>
+                                    <li class="cart"><a href="#">
+                                        <svg class="icon icon-cart">
+                                            <symbol id="icon-cart" viewBox="0 0 25 32">
+                                                <title>cart</title>
+                                                <path d="M24.727 5.693c0-0.505-0.412-0.913-0.913-0.913h-3.309c-0.412 0-0.776 0.275-0.885 0.671l-3.733 13.507h-10.186l-3.386-7.774h11.281c0.505 0 0.913-0.412 0.913-0.913 0-0.505-0.412-0.913-0.913-0.913h-12.683c-0.303 0-0.594 0.154-0.764 0.412s-0.198 0.578-0.077 0.869l4.178 9.604c0.154 0.335 0.473 0.549 0.84 0.549h11.479c0.412 0 0.776-0.275 0.885-0.671l3.733-13.507h2.622c0.505-0.004 0.917-0.416 0.917-0.921z"></path>
+                                                <path d="M19.511 25.147c0-1.143-0.929-2.073-2.073-2.073s-2.073 0.929-2.073 2.073 0.929 2.073 2.073 2.073 2.073-0.929 2.073-2.073z"></path>
+                                                <path d="M6.537 25.285c0.077-1.127-0.776-2.133-1.919-2.21s-2.133 0.792-2.21 1.919c-0.032 0.566 0.137 1.099 0.505 1.511 0.368 0.428 0.869 0.671 1.418 0.715 0.044 0 0.105 0 0.154 0 1.079 0 1.976-0.853 2.053-1.935z"></path>
+                                            </symbol>
+                                            <use xlink:href="#icon-cart"></use>
+                                        </svg>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="main-slider">
+                <div class="slider">
+                    <div class="sl-slide">
+                        <img src="images/main-backgrounds/main-slider-image.jpg" alt="">
+                        <div class="description">
+                            <h1>adidas yeezy boost <span>350</span></h1>
+                            <p>shop now</p>
+                        </div>
+                    </div>
+                    <div class="sl-slide">
+                        <img src="images/main-backgrounds/main-slider-image.jpg" alt="">
+                        <div class="description">
+                            <h1>adidas yeezy boost <span>350</span></h1>
+                            <p>shop now</p>
+                        </div>
+                    </div>
+                    <div class="sl-slide">
+                        <img src="images/main-backgrounds/main-slider-image.jpg" alt="">
+                        <div class="description">
+                            <h1>adidas yeezy boost <span>350</span></h1>
+                            <p>shop now</p>
+                        </div>
+                    </div>
+                    <div class="sl-slide">
+                        <img src="images/main-backgrounds/main-slider-image.jpg" alt="">
+                        <div class="description">
+                            <h1>adidas yeezy boost <span>350</span></h1>
+                            <p>shop now</p>
+                        </div>
+                    </div>
+                    <div class="sl-slide">
+                        <img src="images/main-backgrounds/main-slider-image.jpg" alt="">
+                        <div class="description">
+                            <h1>adidas yeezy boost <span>350</span></h1>
+                            <p>shop now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="my-content">
+            <div class=" section section-products">
+                <div class="container">
+                    <div class="title-poducts">This Week</div>
+                    <div class="holder-card-products">
+
+                        <div class=" card card-product">
+                            <div class="card-header">
+                                <img src="images/this-week/products-img1.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Men’s Trainers</div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Integer nec odio. Praesent libero. Sed cursus
+                                        ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                                        elementum imperdiet. Duis sagittis ipsum. Praesent
+                                        mauris. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
+                        <div class=" card card-product">
+                            <div class="card-header">
+                                <img src="images/this-week/products-img2.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Men’s Trainers</div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Integer nec odio. Praesent libero. Sed cursus
+                                        ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                                        elementum imperdiet. Duis sagittis ipsum. Praesent
+                                        mauris. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
+                        <div class=" card card-product">
+                            <div class="card-header">
+                                <img src="images/this-week/products-img3.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Men’s Trainers</div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Integer nec odio. Praesent libero. Sed cursus
+                                        ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                                        elementum imperdiet. Duis sagittis ipsum. Praesent
+                                        mauris. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
+                        <div class=" card card-product">
+                            <div class="card-header">
+                                <img src="images/this-week/products-img4.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Men’s Trainers</div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Integer nec odio. Praesent libero. Sed cursus
+                                        ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                                        elementum imperdiet. Duis sagittis ipsum. Praesent
+                                        mauris. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
+                        <div class=" card card-product">
+                            <div class="card-header">
+                                <img src="images/this-week/products-img5.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Men’s Trainers</div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Integer nec odio. Praesent libero. Sed cursus
+                                        ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                                        elementum imperdiet. Duis sagittis ipsum. Praesent
+                                        mauris. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
+                        <div class=" card card-product">
+                            <div class="card-header">
+                                <img src="images/this-week/products-img6.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Men’s Trainers</div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Integer nec odio. Praesent libero. Sed cursus
+                                        ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                                        elementum imperdiet. Duis sagittis ipsum. Praesent
+                                        mauris. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
+                        <div class=" card card-product">
+                            <div class="card-header">
+                                <img src="images/this-week/products-img7.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Men’s Trainers</div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Integer nec odio. Praesent libero. Sed cursus
+                                        ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                                        elementum imperdiet. Duis sagittis ipsum. Praesent
+                                        mauris. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
+                        <div class=" card card-product">
+                            <div class="card-header">
+                                <img src="images/this-week/products-img8.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Men’s Trainers</div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Integer nec odio. Praesent libero. Sed cursus
+                                        ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                                        elementum imperdiet. Duis sagittis ipsum. Praesent
+                                        mauris. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
+                        <div class=" card card-product">
+                            <div class="card-header">
+                                <img src="images/this-week/products-img9.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Men’s Trainers</div>
+                                <div class="card-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Integer nec odio. Praesent libero. Sed cursus
+                                        ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+                                        elementum imperdiet. Duis sagittis ipsum. Praesent
+                                        mauris. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="button">shop now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="my-footer"></div>
+    </div>
+</div>
+
+<!--scripts-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="mmenu/jquery.mmenu.all.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

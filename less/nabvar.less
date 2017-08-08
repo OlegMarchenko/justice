@@ -1,0 +1,50 @@
+@nav-font: 'open_sansregular';
+@nav-font-size: 18px;
+@lists-color: #888;
+@nav-active: #000;
+@nav-hover: #000;
+
+.logo {
+  width: 97px;
+}
+
+.navbar-nav {
+  a {
+    font-family: @nav-font;
+    font-size: @nav-font-size;
+    color: @lists-color;
+    &:hover {
+      color: @nav-hover;
+    }
+  }
+  .active a {
+    color: @nav-active;
+  }
+}
+
+.holder-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-collapse {
+  display: flex;
+}
+
+.navbar-nav {
+  li {
+    display: inline-block;
+    padding: 0 32px;
+    a {
+      display: block;
+    }
+  }
+}
+.navbar-optional {
+  display: flex;
+}
+
+
+
+.mm-navbar {
+  border: none;
+}

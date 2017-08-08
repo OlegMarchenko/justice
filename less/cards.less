@@ -1,0 +1,40 @@
+@size-title: 30px;
+@color-title: #000;
+@default-size: 16px;
+@primary-color: #999;
+
+
+.holder-card-products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.card-product {
+  width: 33.33%;
+  padding: 0 12px;
+  font-size: 0;
+  min-height: 722px;
+  margin-bottom: 48px;
+}
+
+.title-poducts {
+  margin-bottom: 24px;
+  color: #000;
+  font-size: 32px;
+  font-family: 'open_sansregular';
+}
+
+.card-body {
+  margin-bottom: 24px;
+  .card-title {
+    font-size: @size-title;
+    color: @color-title;
+    padding-top: 15px;
+  }
+  .card-description {
+    font-size: @default-size;
+    color: @primary-color;
+  }
+}

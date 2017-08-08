@@ -1,0 +1,60 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+.icon-cart {
+  font-size: 27px;
+  margin: -5px 32px 0 32px;
+  color: #000;
+}
+.cart {
+  position: relative;
+}
+.cart::before {
+  content: '3';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #cc0000;
+  top: -4px;
+  right: 0;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'open_sansregular';
+  text-align: center;
+}
+.icon-facebook {
+  width: 0.4677734375em;
+}
+.icon-google {
+  width: 0.9990234375em;
+}
+.icon-pinterest {
+  width: 0.7744140625em;
+}
+.icon-search {
+  font-size: 25px;
+  margin: -3px 32px 0 32px;
+  color: #000;
+}
+.icon-twitter {
+  width: 1.23046875em;
+}
+.icon-user {
+  width: 19px;
+  height: 19px;
+  margin: 0 32px;
+  color: #000;
+}

@@ -1,0 +1,78 @@
+header {
+  padding: 28px 0;
+}
+.sl-slide {
+  position: relative;
+}
+.sl-slide::before {
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: .4;
+  position: absolute;
+}
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.description h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-size: 25px;
+  position: relative;
+  padding-bottom: 19px;
+}
+.description h1::before {
+  position: absolute;
+  content: '';
+  width: 66px;
+  height: 2px;
+  background-color: #fff;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.description h1 span {
+  font-size: 36px;
+}
+.description p {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'open_sanssemibold';
+}
+.slick-dots {
+  bottom: 30px;
+}
+.slick-dots li {
+  width: 16px;
+  height: 16px;
+}
+.slick-dots li button {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.slick-dots li button:before {
+  width: 16px;
+  height: 16px;
+  content: '';
+}
+.slick-dots li.slick-active button:before {
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+}
