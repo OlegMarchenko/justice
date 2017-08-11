@@ -1,0 +1,19 @@
+.lists-holder {
+  display: flex;
+  justify-content: space-between;
+}
+.lists-holder a {
+  font-size: 21px;
+  font-family: 'open_sansregular';
+  color: #888888;
+}
+.social-links {
+  margin: 0 -16px;
+}
+.social-links li {
+  margin: 0 16px;
+  display: inline-block;
+}
+.social-links li:first-child {
+  display: block;
+}

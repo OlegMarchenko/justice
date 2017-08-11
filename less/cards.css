@@ -11,7 +11,7 @@
   min-height: 722px;
   margin-bottom: 48px;
 }
-.title-poducts {
+.title-products {
   margin-bottom: 24px;
   color: #000;
   font-size: 32px;
@@ -28,4 +28,25 @@
 .card-body .card-description {
   font-size: 16px;
   color: #999;
+}
+@media screen and (max-width: 768px) {
+  .card-product {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+  .card-body .card-title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-product {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .card-product .card-title {
+    font-size: 18px;
+  }
+  .card-body .card-title {
+    font-size: 30px;
+  }
 }
