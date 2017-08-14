@@ -11,15 +11,17 @@ $(document).ready(function () {
        dots: true,
        arrows: true
    });
+   if ($('.slider-brands').length) {
+       $('.slider-brands').slick({
+           slidesToShow: 6
+       });
+   }
 
-    $('.slider-brands').slick({
-        slidesToShow: 6
-    });
-
-    $('.grid').masonry({
-        // options
-        columnWidth: '.grid-item',
-        itemSelector: '.grid-item'
-    });
-
+    if ($('.grid').length) {
+        $('.grid').masonry({
+            // options
+            columnWidth: '.grid-item',
+            itemSelector: '.grid-item'
+        });
+    }
 });

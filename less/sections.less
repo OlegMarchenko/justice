@@ -1,3 +1,4 @@
+
 .section {
   padding: 48px 0;
 }
@@ -22,5 +23,138 @@
 @media screen and (max-width: 480px) {
   .grid-item {
     width: 50%;
+  }
+}
+
+//HOODIES & SWEATSHIRTS
+
+.content-description {
+  font-size: 20px;
+  color: #000;
+}
+
+.filter-options  {
+  li {
+    display: inline-block;
+    padding: 0 20px;
+    font-family: open_sansregular;
+    &.active {
+      font-family: open_sansbold;
+    }
+    &:last-child {
+      padding-left: 40px;
+    }
+  }
+  a {
+    color: #000;
+  }
+}
+
+.hide-filter {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid #000;
+    border-left:  2px solid #000;
+    top: 8px;
+    left: 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+    margin-left: 4px;
+  }
+}
+
+.number {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid #000;
+    border-left:  2px solid #000;
+    top: 8px;
+    left: 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+    margin-left: 24px;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid #000;
+    border-left:  2px solid #000;
+    top: 8px;
+    right: 0;
+    transform: rotate(-135deg);
+    cursor: pointer;
+    margin-right: 6px;
+  }
+}
+
+.holder-filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 24px 0;
+}
+
+.holder-option {
+  display: flex;
+  justify-content: space-between;
+  max-width: 750px;
+  width: 100%;
+}
+
+.breadcrumbs-items {
+  li {
+    display: inline-block;
+    font-family: open_sansregular;
+    position: relative;
+    padding-right: 7px;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 13px;
+      top: 5px;
+      right: 0;
+      background-color: #000;
+      transform: rotate(5deg);
+    }
+    &:last-child {
+      font-family: open_sansbold;
+      &::before {
+        content: none;
+      }
+    }
+  }
+  a {
+    color: #000;
+  }
+}
+
+.sort {
+  padding-right: 17px;
+  position: relative;
+  a {
+    color: #000;
+    font-family: open_sansregular;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    width:  9px;
+    height: 9px;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    right: 0;
+    bottom: 10px;
   }
 }
