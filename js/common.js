@@ -24,4 +24,10 @@ $(document).ready(function () {
             itemSelector: '.grid-item'
         });
     }
+
+    if ($('.brand').length) {
+        $(window).on("load", function () {
+            $(".brand").mCustomScrollbar();
+        });
+    }
 });
