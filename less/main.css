@@ -663,7 +663,7 @@ Single-colored icons can be modified like so:
   }
 }
 .mg {
-  margin-bottom: 10px;
+  padding: 12px 0;
 }
 .bd {
   border-bottom: 1px solid #888;
@@ -676,20 +676,37 @@ input[type="checkbox"] {
   font-size: 18px;
   color: #000;
   font-family: open_sansregular;
-  padding-bottom: 8px;
-  position: relative;
   cursor: pointer;
 }
-.filter-title::before {
+.filter-opened {
+  position: relative;
+}
+.filter-opened::before {
   position: absolute;
   content: '';
   width: 12px;
   height: 12px;
   border-bottom: 2px solid #000;
   border-left: 2px solid #000;
-  top: 10px;
+  top: 22px;
   right: 2px;
   transform: rotate(135deg);
+  cursor: pointer;
+}
+.filter-closed {
+  position: relative;
+}
+.filter-closed::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  top: 22px;
+  right: 2px;
+  transform: rotate(-45deg);
+  cursor: pointer;
 }
 .filter-block {
   width: 211px;
@@ -726,20 +743,31 @@ input[type=checkbox]:checked + label:before {
   width: 6px;
   background-color: #bbbbbb;
 }
+.filter-sizes {
+  border-top: 1px solid #000;
+}
 .filter-sizes ul {
-  margin: 0 -10px;
+  margin: 0 -4px;
 }
 .filter-sizes li {
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 1px;
 }
 .filter-sizes a {
   font-size: 14px;
   color: #888;
-  padding: 2px 5px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+  transition: .2s;
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
+.filter-sizes a:hover,
 .filter-sizes a.active {
-  color: #000;
   border: 1px solid #000;
   border-radius: 50%;
+  color: #000;
 }

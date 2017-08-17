@@ -1,7 +1,7 @@
 @border: 1px solid #888;
 
 .mg {
-  margin-bottom: 10px;
+  padding: 12px 0;
 }
 
 .bd {
@@ -17,9 +17,11 @@ input[type="checkbox"] {
   font-size: 18px;
   color: #000;
   font-family: open_sansregular;
-  padding-bottom: 8px;
-  position: relative;
   cursor: pointer;
+}
+
+.filter-opened {
+  position: relative;
   &::before {
     position: absolute;
     content: '';
@@ -27,11 +29,29 @@ input[type="checkbox"] {
     height: 12px;
     border-bottom: 2px solid #000;
     border-left: 2px solid #000;
-    top: 10px;
+    top: 22px;
     right: 2px;
     transform: rotate(135deg);
+    cursor: pointer;
   }
 }
+
+.filter-closed {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    top: 22px;
+    right: 2px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+  }
+}
+
 
 .filter-block {
   width: 211px;
@@ -42,7 +62,7 @@ input[type="checkbox"] {
   }
 }
 
-input[type=checkbox] + label:before{
+input[type=checkbox] + label:before {
   content: '';
   width: 12px;
   height: 12px;
@@ -50,7 +70,7 @@ input[type=checkbox] + label:before{
   margin-right: 8px;
 }
 
-input[type=checkbox]:checked + label:before{
+input[type=checkbox]:checked + label:before {
   content: url("../images/icons/checked.png");
 }
 
@@ -65,9 +85,7 @@ input[type=checkbox]:checked + label:before{
   padding-top: 8px;
 }
 
-
 //styles for custom scroll-bar
-
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   width: 6px;
@@ -82,21 +100,30 @@ input[type=checkbox]:checked + label:before{
 //sizes styles
 
 .filter-sizes {
+  border-top: 1px solid #000;
   ul {
-    margin: 0 -10px;
+    margin: 0 -4px;
   }
   li {
     display: inline-block;
-    padding: 0 5px;
+    padding: 0 1px;
   }
   a {
     font-size: 14px;
     color: #888;
-    padding: 2px 5px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    transition: .2s;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    &:hover,
     &.active {
-      color: #000;
       border: 1px solid #000;
       border-radius: 50%;
+      color: #000;
     }
   }
 }
